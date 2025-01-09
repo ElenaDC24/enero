@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FORMULARIO</title>
+</head>
+<body>
+<form action="destinopersona.jsp">
+<p>
+<label for="nombre">Nombre:</label>
+<input type="text" name="nombre" id="nombre"/>
+</p>
+<p>
+<label for="apellidos">Apellidos:</label>
+<input type="text" name="apellidos" id="apellidos"/>
+</p>
+<p>
+<label for="fecha">Fecha Nacimiento:</label>
+<input type="date" name="fecha" id="fecha"/>
+</p>
+<p>
+
+
+Selecciona lenguaje: 
+<select name="lenguaje">
+<option>Java</option>
+<option>php</option>
+<option>c#</option>
+</select>
+
+
+
+
+
+<p>
+<input type="radio" name="nivel" value="1"/> basico
+<input type="radio" name="nivel" value="2"/> intermedio
+<input type="radio" name="nivel" value="3"/> experto
+</p>
+<p>
+<input type="checkbox" name="nuevo" value="true"/>nuevo
+</p>
+<p>
+Selecciona los dispositivos:
+
+<select name="dispositivos" multiple="multiple">
+<option>pc</option>
+<option>tablet</option>
+<option>telefono</option>
+</select>
+<input type="submit" value="enviar"/>
+</p>
+
+</form>
+</body>
+</html>
