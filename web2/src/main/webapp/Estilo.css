@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+table{
+	
+	background: #99ccff;
+	color:white;
+	font-family:sans-serif;
+	text-transform:capitalize;
+}
+h1{
+	font-family:sans-serif;
+}
+table caption {
+	color:black;
+	font-size: 1.3em;
+}
+table,tr,td,th {
+	
+	border:1px solid #ff0000;
+}

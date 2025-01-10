@@ -15,7 +15,7 @@ int numero2= Integer.parseInt(request.getParameter("numero2"));
 String opreacion =request.getParameter("operacion");
 if (operacion.equals("+")) {
 	out.println(numero1+numero2);
-	
+
 }else if (operacion.equals("-")){
 out.println(numero1-numero2);
 
