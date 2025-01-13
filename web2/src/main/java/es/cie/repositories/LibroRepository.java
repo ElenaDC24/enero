@@ -1,22 +1,15 @@
 package es.cie.repositories;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import es.cie.negocio.Libro;
 
-public class LibroRepository {
+public interface LibroRepository {
 
-	private static List<Libro> lista = new ArrayList<Libro>();
+	List<Libro> buscarTodos();
 
-	static {
+	List<Libro> buscarPorTitulo(String titulo);
 
-		lista.add(new Libro("1234", "quijote", "pepe", 200));
-		lista.add(new Libro("5678", "celestina", "juan", 100));
-	}
+	List<Libro> buscarPorAutor(String autor);
 
-	public List<Libro> buscarTodos() {
-
-		return lista;
-	}
 }

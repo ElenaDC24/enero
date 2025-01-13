@@ -15,14 +15,36 @@
 
 LibroRepository repo = new LibroRepositoryMemoria();
 
-List<Libro> lista = repo.buscarTodos();
+String titulo=request.getParameter("titulo");
+
+String autor=request.getParameter("autor");
+
+List<Libro> lista=null;
+
+if (titulo!=null){
+	
+		lista=repo.buscarPorTitulo(titulo);
+		
+}else if (autor!=null){
+	
+		lista=repo.buscarPorAutor(autor);
+		
+}else {
+	
+ lista = repo.buscarTodos();
+}
 %>
 <body>
+<form method="get">
+titulo:<input type="text" name="titulo"/>
+<input type="submit" value="buscar titulo"/>
+</form>	
+<form method="get">
+autor:<input type="text" name="autor"/>
+<input type="submit" value="buscar autor"/>
+</form>	
 
-	<%
-	for (Libro libro : lista) {
-	}
-	%>
+	
 </body>
 <h1>Lista de Libros</h1>
 
